@@ -1,0 +1,21 @@
+// Documentation at https://www.sublimetext.com/docs/color_schemes.html
+{
+    "variables":
+    {
+    },
+    "globals":
+    {
+    },
+    "rules":
+    [
+        {"scope": "meta.tag, declaration.tag", "font_style": "bold"},
+        {"scope": "constant.language", "font_style": "bold"},
+        {"scope": "constant.character.escape, string source", 
+"font_style": "bold"},
+        {"scope": "keyword.control", "font_style": "bold"},
+        {"scope": "keyword.control.import", "font_style": "bold"},
+        {"scope": "keyword, storage", "font_style": "bold"},
+        {"scope": "storage", "font_style": "bold"},
+    ]
+}
+

@@ -1,0 +1,11 @@
+{
+	"inhibit_snippet_completions": true,
+	"clients":
+	{
+		"clangd":
+		{
+			"enabled": true,
+		},
+	},
+}
+
