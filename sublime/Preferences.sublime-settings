@@ -5,9 +5,11 @@
 	],
 	"dark_theme": "GitHub Dark.sublime-theme",
 	"light_theme": "GitHub Dark.sublime-theme",
+	"font_face": "SF Mono Semibold",
+	"font_size": 11,
 	"font_options": ["no_italic"],
 	"theme": "Default Dark.sublime-theme",
-	"color_scheme": "Packages/Darkula Color Scheme/darkula.tmTheme",
+	"color_scheme": "gruvbox (Dark) (Soft) NDC.sublime-color-scheme",
 	"translate_tabs_to_spaces": true,
 	"find_selected_text": true,
 	"scroll_past_end": 0.5,
@@ -16,4 +18,3 @@
 	"trim_trailing_white_space_on_save": true,
 	"rulers": [80],
 }
-
