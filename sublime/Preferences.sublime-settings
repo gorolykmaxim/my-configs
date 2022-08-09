@@ -9,7 +9,7 @@
 	"font_size": 11,
 	"font_options": ["no_italic"],
 	"theme": "Default Dark.sublime-theme",
-	"color_scheme": "gruvbox (Dark) (Soft) NDC.sublime-color-scheme",
+	"color_scheme": "gruvbox (Dark) (Medium).sublime-color-scheme",
 	"translate_tabs_to_spaces": true,
 	"find_selected_text": true,
 	"scroll_past_end": 0.5,
