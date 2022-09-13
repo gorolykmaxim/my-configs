@@ -1,0 +1,18 @@
+[
+  { "keys": ["ctrl+backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+  { "keys": ["ctrl+shift+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"} },
+  { "keys": ["ctrl+option+z"], "command": "revert_hunk" },
+  { "keys": ["ctrl+r"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+  { "keys": ["ctrl+shift+r"], "command": "replace_next" },
+  { "keys": ["ctrl+shift+o"], "command": "goto_symbol_in_project" },
+  { "keys": ["home"], "command": "move_to", "args": {"to": "bol"} },
+  { "keys": ["end"], "command": "move_to", "args": {"to": "eol"} },
+  { "keys": ["shift+end"], "command": "move_to", "args": {"to": "eol", "extend": true} },
+  { "keys": ["shift+home"], "command": "move_to", "args": {"to": "bol", "extend": true } },
+  { "keys": ["ctrl+alt+left"], "command": "focus_neighboring_group", "args": {"forward": false} },
+  { "keys": ["ctrl+alt+right"], "command": "focus_neighboring_group" },
+  { "keys": ["ctrl+shift+alt+left"], "command": "move_to_neighboring_group", "args": {"forward": false} },
+  { "keys": ["ctrl+shift+alt+right"], "command": "move_to_neighboring_group" },
+  { "keys": ["ctrl+shift+]"], "command": "next_view_in_stack" },
+  { "keys": ["ctrl+shift+["], "command": "prev_view_in_stack" },
+]
