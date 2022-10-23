@@ -2,4 +2,4 @@
 - QML
 - CMake
 - MarkdownPreview
-- gruvbox
+- Darkula Color Scheme

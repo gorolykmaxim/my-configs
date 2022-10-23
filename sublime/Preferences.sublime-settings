@@ -9,7 +9,7 @@
 	"font_size": 11,
 	"font_options": ["no_italic"],
 	"theme": "Default Dark.sublime-theme",
-	"color_scheme": "gruvbox (Dark) (Medium).sublime-color-scheme",
+	"color_scheme": "Packages/Darkula Color Scheme/darkula.tmTheme",
   "tab_size": 2,
 	"translate_tabs_to_spaces": true,
   "detect_indentation": false,
