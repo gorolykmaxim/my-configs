@@ -1,0 +1,46 @@
+diff --git a/Users/maxim/Downloads/LSP/plugin/core/views.py b/Users/maxim/Library/Application Support/Sublime Text/Packages/LSP/plugin/core/views.py
+index 0319305..d4c7d42 100644
+--- a/Users/maxim/Downloads/LSP/plugin/core/views.py
++++ b/Users/maxim/Library/Application Support/Sublime Text/Packages/LSP/plugin/core/views.py	
+@@ -1029,9 +1029,12 @@ def format_completion(
+     kind = COMPLETION_KINDS.get(completion_kind, sublime.KIND_AMBIGUOUS) if completion_kind else sublime.KIND_AMBIGUOUS
+ 
+     details = []  # type: List[str]
++    raw_details = []
+     if can_resolve_completion_items or item.get('documentation'):
+         details.append(make_command_link(
+             'lsp_resolve_docs', "More", {'index': index, 'session_name': session_name}, view_id=view_id))
++        raw_details.append(make_command_link(
++            'lsp_resolve_docs', "More", {'index': index, 'session_name': session_name}, view_id=view_id))
+ 
+     if lsp_label_detail and (lsp_label + lsp_label_detail).startswith(lsp_filter_text):
+         trigger = lsp_label + lsp_label_detail
+@@ -1041,14 +1044,18 @@ def format_completion(
+         annotation = lsp_detail
+         if lsp_label_detail:
+             details.append(html.escape(lsp_label + lsp_label_detail))
++            raw_details.append(lsp_label + lsp_label_detail)
+         if lsp_label_description:
+             details.append(html.escape(lsp_label_description))
++            raw_details.append(lsp_label_description)
+     else:
+         trigger = lsp_filter_text
+         annotation = lsp_detail
+         details.append(html.escape(lsp_label + lsp_label_detail))
++        raw_details.append(lsp_label + lsp_label_detail)
+         if lsp_label_description:
+             details.append(html.escape(lsp_label_description))
++            raw_details.append(lsp_label_description)
+ 
+     if item.get('deprecated') or CompletionItemTag.Deprecated in item.get('tags', []):
+         annotation = "DEPRECATED - " + annotation if annotation else "DEPRECATED"
+@@ -1056,6 +1063,9 @@ def format_completion(
+     insert_replace_support_html = get_insert_replace_support_html(item)
+     if insert_replace_support_html:
+         details.append(insert_replace_support_html)
++        raw_details.append(insert_replace_support_html)
++    if kind == KIND_FUNCTION or kind == KIND_METHOD:
++      trigger += " | ".join(raw_details).replace(" " + trigger + "(", "(")
+ 
+     completion = sublime.CompletionItem.command_completion(
+         trigger=trigger,
