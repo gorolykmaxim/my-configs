@@ -1,10 +1,10 @@
+// Settings in here override those in "LSP/LSP.sublime-settings"
 {
   "inhibit_snippet_completions": true,
-  "clients":
-  {
-    "clangd":
-    {
-      "enabled": true,
-    },
-  },
- }
+  "clients": {
+    "clangd": {
+      "command": ["/usr/bin/clangd", "--completion-style=detailed", "--header-insertion=never"],
+      "enabled": true
+    }
+  }
+}
