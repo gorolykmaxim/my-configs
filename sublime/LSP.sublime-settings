@@ -3,7 +3,6 @@
   "inhibit_snippet_completions": true,
   "clients": {
     "clangd": {
-      "command": ["/usr/bin/clangd", "--completion-style=detailed", "--header-insertion=never"],
       "enabled": true
     }
   }
