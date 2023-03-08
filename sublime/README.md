@@ -4,3 +4,5 @@
 - CMake
 - MarkdownPreview
 - Darkula Color Scheme
+- FileIcons
+- gruvbox
