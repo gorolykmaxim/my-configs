@@ -1,5 +1,4 @@
 # Plugins list
-- LSP
 - Clang Format
 - QML
 - CMake
