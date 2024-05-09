@@ -1,5 +1,0 @@
-{
-  "binary": "/opt/homebrew/Cellar/llvm/14.0.6_1/bin/clang-format",
-  "style": "Google",
-  "format_on_save": true
-}
